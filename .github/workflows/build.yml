@@ -11,3 +11,6 @@ jobs:
     steps:
     - name: Debugging with tmate
       uses: mxschmitt/action-tmate@v3.22
+      with:
+        # Whether to authorize only the public SSH keys of the user triggering the workflow (defaults to true if the GitHub profile of the user has a public SSH key)
+        limit-access-to-actor: false
